@@ -15,13 +15,13 @@ def render_sidebar():
     st.sidebar.title("⚡ Control Panel")
 
     # ── 0. TRADING JOURNAL LINK BUTTON ──────────────────────────────────────────
-    st.sidebar.link_button(
-        label="📓 Access Trading Journal App",
-        url="https://pcmonk-tradingjournal.vercel.app/",  # Replace with your actual journal URL
-        use_container_width=True,
-        type="secondary",
-        help="Click to open your trading journal in a new tab.",
-    )
+  #  st.sidebar.link_button(
+  #      label="📓 Access Trading Journal App",
+  #      url="https://pcmonk-tradingjournal.vercel.app/",  # Replace with your actual journal URL
+  #      use_container_width=True,
+  #      type="secondary",
+  #      help="Click to open your trading journal in a new tab.",
+  #  )
     
     # ── 0.1 WALKTHROUGH & DOCUMENTATION TRIGGER ──────────────────────────────────
     render_how_it_works_button()
