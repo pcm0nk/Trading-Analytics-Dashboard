@@ -12,7 +12,12 @@ def render_tab_data():
         st.markdown("### 📂 Data Ingestion & Automated Schema Matching")
     with col_btn:
         render_video_button("data", "Watch Data Video")
-
+    # Important File Type Guidance
+    st.warning(
+        "⚠️ **Important File Requirement:** Upload **Order Detail / Execution Fill** files "
+        "(raw trade fills), **NOT** Position History or Summary reports. The FIFO matching engine requires "
+        "granular execution sub-fills to accurately reconstruct position lifecycles."
+    )
     st.markdown(
         "The system features an **Automated Schema Engine (`RapidFuzz`)** that automatically detects exchange export formats "
         "(e.g., WEEX, Binance, Bybit, OKX) and maps column headers to our internal schema. "
@@ -59,7 +64,7 @@ def render_tab_data():
 
     with dl_col1:
         st.markdown(
-            "Download the standard sample CSV template to see a reference structure"
+            "Download the standard sample Order Detail CSV template to see a reference structure"
             " for execution logs before uploading custom files."
         )
 
