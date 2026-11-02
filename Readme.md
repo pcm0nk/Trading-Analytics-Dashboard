@@ -2,6 +2,7 @@
 
 An end-to-end trading analytics platform built with Streamlit and Python. The system ingests raw trade fill logs from crypto and futures exchanges, executes First-In-First-Out (FIFO) order matching to reconstruct individual trade lifecycles, and provides performance analytics, interactive equity charts, drawdown modeling, and machine-learning-driven behavioral diagnostics.
 
+Demo: https://pcmonk-trading-analytics-dashboard.streamlit.app/
 ---
 
 ## Core Features & Technical Capabilities
